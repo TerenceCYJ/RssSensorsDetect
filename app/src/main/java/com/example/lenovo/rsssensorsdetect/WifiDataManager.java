@@ -96,7 +96,6 @@ public class WifiDataManager {
             while (GlobalPara.getInstance().timeSinceStart
                     - GlobalPara.getInstance().timeOfStartScan < 50) {
                 // 等待，可以用来控制时间，，1 * 10ms, 正常的手机wifi扫描一次大约得一秒了
-
             }
             GlobalPara.getInstance().timeOfStartScan = GlobalPara.getInstance().timeSinceStart;
 

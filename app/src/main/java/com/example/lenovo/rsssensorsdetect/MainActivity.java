@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    //点击wifi列表中某个wifi信号
     private AdapterView.OnItemClickListener wifiClickListener = new AdapterView.OnItemClickListener() {
 
         @Override
@@ -137,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
     private long exitTime = 0;
 
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
+    public boolean onKeyDown(int keyCode, KeyEvent event) {//监听手机屏幕上的按钮
         if (keyCode == KeyEvent.KEYCODE_BACK
                 && event.getAction() == KeyEvent.ACTION_DOWN) {
             if ((System.currentTimeMillis() - exitTime) > 2000) {
@@ -160,6 +161,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private class TimeCountRunnable implements Runnable {
+        //实现Runnable接口的类，可以做很多事情，可以传递给任何参数是Runnable类的方法，而不仅仅是只能被用于实现一个线程
         @Override
         public void run() {
             try {

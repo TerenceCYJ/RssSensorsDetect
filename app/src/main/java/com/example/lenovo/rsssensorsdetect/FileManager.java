@@ -37,9 +37,11 @@ public void saveData() {
             directory.mkdirs();//在已经存在的目录中创建创建文件夹
             File file = new File(directory, "dataRssi_at_"
                     + GlobalPara.getInstance().position_index + ".txt");
+
             FileOutputStream fOut = new FileOutputStream(file);
             OutputStream fos = fOut;
             DataOutputStream dos = new DataOutputStream(fos);
+
             for (int i = 0; i < WifiDataManager.getInstance().dataCount; i++) {
                 // 存wifi的Rssi数据
                 for (int j = 0; j < WifiDataManager.getInstance().dataBssid
