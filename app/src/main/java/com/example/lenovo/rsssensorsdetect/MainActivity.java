@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
     private Button nextPositionButton;
     private TextView positionTextView;
     public static TextView dataTextView;
+    public static TextView dataTextViewOri;
+    public static TextView dataTextViewAcc;
+    public static TextView dataTextViewGro;
+    public static TextView dataTextViewGra;
     public ToggleButton toggleButton;
     public ListView listView = null;
 
@@ -46,7 +50,13 @@ public class MainActivity extends AppCompatActivity {
         nextPositionButton = (Button) findViewById(R.id.nextPositionButton);
         previousPositionButton = (Button) findViewById(R.id.previousPositionButton);
         positionTextView = (TextView) findViewById(R.id.positionTextView);
+
         dataTextView = (TextView) findViewById(R.id.dataTextView);
+        dataTextViewOri = (TextView) findViewById(R.id.dataTextViewOri);
+        dataTextViewAcc = (TextView) findViewById(R.id.dataTextViewAcc);
+        dataTextViewGro = (TextView) findViewById(R.id.dataTextViewGro);
+        dataTextViewGra = (TextView) findViewById(R.id.dataTextViewGra);
+
         listView = (ListView) findViewById(R.id.listView1);
         nextPositionButton.setOnClickListener(changePositionClickListener);
         previousPositionButton.setOnClickListener(changePositionClickListener);

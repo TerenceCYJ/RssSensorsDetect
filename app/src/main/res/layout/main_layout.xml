@@ -23,7 +23,7 @@
             android:id="@+id/appname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:layout_below="@id/textView1"
             android:gravity="center"
             android:text="RSS Collection"
             android:textSize="20sp" />
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_below="@id/appname"
-            android:background="#FF34B3"
+            android:background="#ee00ee"
             />
 
         <ListView
@@ -48,7 +48,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0sp"
-        android:layout_weight="1" >
+        android:layout_weight="2" >
 
         <ToggleButton
             android:id="@+id/toggleButton1"
@@ -95,6 +95,38 @@
             android:layout_above="@id/previousPositionButton"
             android:gravity="center"
             android:text="地磁数据:"
+            android:textColor="#ee00ee" />
+        <TextView
+            android:id="@+id/dataTextViewOri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/dataTextView"
+            android:gravity="center"
+            android:text="方向数据:"
+            android:textColor="#ee00ee" />
+        <TextView
+            android:id="@+id/dataTextViewAcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/dataTextViewOri"
+            android:gravity="center"
+            android:text="加速度数据:"
+            android:textColor="#ee00ee" />
+        <TextView
+            android:id="@+id/dataTextViewGro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/dataTextViewAcc"
+            android:gravity="center"
+            android:text="陀螺仪数据:"
+            android:textColor="#ee00ee" />
+        <TextView
+            android:id="@+id/dataTextViewGra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/dataTextViewGro"
+            android:gravity="center"
+            android:text="重力数据:"
             android:textColor="#ee00ee" />
     </RelativeLayout>
 

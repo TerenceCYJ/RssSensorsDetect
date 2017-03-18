@@ -164,6 +164,8 @@ public class SensorDataManager {
             temp_o[0] = event.values[0];
             temp_o[1] = event.values[1];
             temp_o[2] = event.values[2];
+            MainActivity.dataTextViewOri.setText("方向数据: " + temp_o[0] + " "
+                    + temp_o[1] + " " + temp_o[2]);
             updateSensorsData();
         }
         @Override
@@ -177,6 +179,8 @@ public class SensorDataManager {
             temp_a[0] = event.values[0];
             temp_a[1] = event.values[1];
             temp_a[2] = event.values[2];
+            MainActivity.dataTextViewAcc.setText("加速度数据: " + temp_a[0] + " "
+                    + temp_a[1] + " " + temp_a[2]);
             updateSensorsData();
         }
         @Override
@@ -190,6 +194,8 @@ public class SensorDataManager {
             temp_g[0] = event.values[0];
             temp_g[1] = event.values[1];
             temp_g[2] = event.values[2];
+            MainActivity.dataTextViewGro.setText("陀螺仪数据: " + temp_g[0] + " "
+                    + temp_g[1] + " " + temp_g[2]);
             updateSensorsData();
         }
 
@@ -204,6 +210,8 @@ public class SensorDataManager {
             temp_gra[0] = event.values[0];
             temp_gra[1] = event.values[1];
             temp_gra[2] = event.values[2];
+            MainActivity.dataTextViewGra.setText("重力数据: " + temp_gra[0] + " "
+                    + temp_gra[1] + " " + temp_gra[2]);
             updateSensorsData();
         }
         @Override
